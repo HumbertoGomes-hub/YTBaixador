@@ -35,7 +35,6 @@ O passo a passo completo está em [docs/INSTALACAO.md](docs/INSTALACAO.md).
 | [SOLUCAO-DE-PROBLEMAS.md](docs/SOLUCAO-DE-PROBLEMAS.md) | usuário | erros comuns e como resolver |
 | [ARQUITETURA.md](docs/ARQUITETURA.md) | desenvolvedor | componentes, protocolo do native host e estado |
 | [DESENVOLVIMENTO.md](docs/DESENVOLVIMENTO.md) | desenvolvedor | ambiente, testes e como estender |
-| [DEPLOY.md](docs/DEPLOY.md) | mantenedor | como gerar e publicar um release |
 | [CHANGELOG.md](CHANGELOG.md) | todos | histórico de versões |
 
 ## Estrutura do projeto
