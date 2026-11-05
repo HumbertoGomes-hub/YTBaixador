@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>YT Baixador</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="24" height="24">
+    <h1>YT Baixador</h1>
+    <button id="settingsToggle" class="icon" title="Configurações" aria-label="Configurações">⚙</button>
+  </header>
+
+  <div id="hostStatus" class="banner" hidden></div>
+
+  <section id="settings" hidden>
+    <label>Pasta de destino
+      <input id="outdir" type="text" placeholder="Padrão: pasta Downloads" spellcheck="false">
+    </label>
+    <div class="row">
+      <button id="openFolder" class="secondary">Abrir pasta</button>
+      <button id="updateYtdlp" class="secondary">Atualizar yt-dlp</button>
+    </div>
+    <p id="hostInfo" class="muted"></p>
+  </section>
+
+  <section id="current">
+    <div id="notVideo" class="muted">Abra um vídeo do YouTube para baixar.</div>
+    <div id="videoBox" hidden>
+      <div class="video">
+        <img id="thumb" alt="">
+        <div>
+          <div id="title" class="title"></div>
+          <div id="meta" class="muted"></div>
+        </div>
+      </div>
+      <div class="row">
+        <select id="preset">
+          <option value="best">Vídeo · melhor qualidade</option>
+          <option value="1080">Vídeo · 1080p (MP4)</option>
+          <option value="720">Vídeo · 720p (MP4)</option>
+          <option value="480">Vídeo · 480p (MP4)</option>
+          <option value="mp3">Áudio · MP3</option>
+          <option value="m4a">Áudio · M4A</option>
+        </select>
+        <button id="download" class="primary">Baixar</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="list-head">
+      <h2>Downloads</h2>
+      <button id="clear" class="link">Limpar concluídos</button>
+    </div>
+    <ul id="list"></ul>
+    <p id="empty" class="muted">Nenhum download ainda.</p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
